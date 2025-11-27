@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Bhaskar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Bhaskar Portfolio</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container projects-page">
+    <h1>Projects</h1>
+    <p class="lead">A selection of projects with descriptions and live links (if available).</p>
+
+    <div class="project-controls">
+      <input id="project-search" placeholder="Search projects..." />
+      <select id="project-filter">
+        <option value="all">All</option>
+        <option value="UI">UI</option>
+        <option value="Web">Web</option>
+        <option value="React">React</option>
+      </select>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+      <!-- Many cards. Add as many as you like. -->
+      <article class="project-card" data-tags="Web,UI">
+        <img src="portfolio.png" alt="">
+        <div class="project-body">
+          <h3>Portfolio Website</h3>
+          <p class="text-gray">A responsive portfolio with smooth animations.</p>
+          <div class="project-actions">
+            <button class="btn btn-sm view-project">Details</button>
+            <a class="btn btn-sm btn-outline" href="#" target="_blank">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="React,Web">
+        <img src="aisolution.png" alt="">
+        <div class="project-body">
+          <h3>AI-Solution</h3>
+          <p class="text-gray">Product listing and checkout flow built in React.</p>
+          <div class="project-actions">
+            <button class="btn btn-sm view-project">Details</button>
+            <a class="btn btn-sm btn-outline" href="https://github.com/Bhaskar787/Ai-Solution" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="React,Web">
+        <img src="peakmagym.png" alt="">
+        <div class="project-body">
+          <h3>Peakma-Gym</h3>
+          <p class="text-gray">Product listing and checkout flow built in React.</p>
+          <div class="project-actions">
+            <button class="btn btn-sm view-project">Details</button>
+            <a class="btn btn-sm btn-outline" href="https://github.com/Bhaskar787/Peakma-Gym" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="React,Web">
+        <img src="mealmate.png" alt="">
+        <div class="project-body">
+          <h3>Mealmate app</h3>
+          <p class="text-gray">Product listing and checkout flow built in React.</p>
+          <div class="project-actions">
+            <button class="btn btn-sm view-project">Details</button>
+            <a class="btn btn-sm btn-outline" href="https://github.com/Bhaskar787/Mealmate" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Add more project cards -->
+    </div>
+
+    <!-- Project modal -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">×</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div id="modal-tags" class="tag-row"></div>
+      </div>
+    </div>
+
+    
+  </main>
+<!-- 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <strong>Bhaskar</strong></div>
+    </div>
+  </footer> -->
+  <footer class="site-footer">
+  <div class="container footer-inner">
+
+    <!-- Branding -->
+    <div class="footer-section footer-brand">
+      <h3 class="brand">Bhaskar Portfolio</h3>
+      <p>Crafting modern web apps and digital experiences with creativity and code.</p>
+    </div>
+
+    <!-- Links + Contact Row -->
+    <div class="footer-links-contact">
+      <!-- Quick Links -->
+      <div class="footer-section footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section footer-contact">
+        <h4>Contact Me</h4>
+        <p>Email: <a href="mailto:bhaskar@example.com">bhaskar@example.com</a></p>
+        <p>Phone: +977-98XXXXXXXX</p>
+        <div class="social-links">
+          <a href="https://github.com/Bhaskar787" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

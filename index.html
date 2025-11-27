@@ -1,0 +1,205 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bhaskar — Developer Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Typed.js (for hero) -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Bhaskar Portfolio</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Hi — I'm <span class="purple">Bhaskar</span></h1>
+        <p class="lead">and I am a passionate <span id="typed-element"></span></p>
+        
+
+        <p class="brief text-gray">
+          I build modern, responsive web apps and visual identities for brands.
+          I love JavaScript, Node.js and beautiful UI.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn" href="projects.html">See Projects</a>
+          <a class="btn btn-outline" href="Resume.pdf" download>Download Resume</a>
+          <a class="btn btn-outline" href="contact.html">Hire Me</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>6+</strong><span>Years Experience</span></div>
+          <div><strong>30+</strong><span>Projects</span></div>
+          <div><strong>10+</strong><span>Companies</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="bg1.png" alt="Profile illustration" class="hero-img" />
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Work / timeline preview -->
+    <section class="work container">
+      <span class="text-gray">What I have done so far</span>
+      <h2>Work Experience</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <img class="image-top" src="html.png" alt="">
+          <div class="timeline-title">HTML Developer <small>(2010–2012)</small></div>
+          <p class="timeline-desc">Built semantic and accessible websites for small businesses.</p>
+        </article>
+
+        <article class="timeline-item">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="timeline-title">Node.js Developer <small>(2012–2015)</small></div>
+          <p class="timeline-desc">Server-side apps, RESTful APIs and basic DevOps.</p>
+        </article>
+
+        <article class="timeline-item">
+          <img class="image-top" src="insta.png" alt="">
+          <div class="timeline-title">Frontend Developer <small>(2015–2018)</small></div>
+          <p class="timeline-desc">Interactive UI and design systems using modern tooling.</p>
+        </article>
+
+        <article class="timeline-item">
+          <img class="image-top" src="twitter.png" alt="">
+          <div class="timeline-title">UI Designer <small>(2018–2020)</small></div>
+          <p class="timeline-desc">Design systems, prototypes, and motion interactions.</p>
+        </article>
+      </div>
+
+      <div class="center">
+        <a href="about.html" class="btn btn-outline">Read My Story</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Featured Projects -->
+    <section class="container featured">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid" id="featured-grid">
+        <!-- project card example -->
+        <article class="project-card" data-title="Portfolio Website" data-desc="Responsive single-page portfolio built with HTML/CSS/JS" data-tags="UI,Web">
+          <img src="portfolio.png" alt="">
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p class="text-gray">Responsive single-page portfolio</p>
+            <div class="project-actions">
+              <button class="btn btn-sm view-project">View</button>
+              <a class="btn btn-sm btn-outline" href="projects.html">More</a>
+            </div>
+          </div>
+        </article>
+        
+
+        <article class="project-card" data-tags="React,Web">
+        <img src="aisolution.png" alt="">
+        <div class="project-body">
+          <h3>AI-Solution</h3>
+          <p class="text-gray">Product listing and checkout flow built in React.</p>
+          <div class="project-actions">
+            <button class="btn btn-sm view-project">Details</button>
+            <a class="btn btn-sm btn-outline" href="projects.html">More</a>
+          </div>
+        </div>
+      </article>
+
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Footer -->
+    <!-- <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <strong>Bhaskar</strong> — Built with care</div>
+        <div class="footer-links">
+          <a href="https://github.com/Bhaskar787" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <!-- Branding -->
+    <div class="footer-section footer-brand">
+      <h3 class="brand">Bhaskar Portfolio</h3>
+      <p>Crafting modern web apps and digital experiences with creativity and code.</p>
+    </div>
+
+    <!-- Links + Contact Row -->
+    <div class="footer-links-contact">
+      <!-- Quick Links -->
+      <div class="footer-section footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section footer-contact">
+        <h4>Contact Me</h4>
+        <p>Email: <a href="mailto:bhaskar@example.com">bhaskar@example.com</a></p>
+        <p>Phone: +977-98XXXXXXXX</p>
+        <div class="social-links">
+          <a href="https://github.com/Bhaskar787" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 <strong>Bhaskar Portfolio</strong>. All rights reserved.</p>
+  </div>
+</footer>
+
+  </main>
+
+  <!-- Shared JS -->
+   <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+  <script src="index.js" defer></script>
+</body>
+</html>
+
