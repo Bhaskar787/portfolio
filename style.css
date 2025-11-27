@@ -1035,8 +1035,61 @@ textarea:focus {
   }
 }
 
+/* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
+.nav {
+  width: 99%;            /* full width without hiding scrollbar */
+  max-width: 99%;
+  background: #040440;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;     /* spacing */
+  box-sizing: border-box;  /* include padding in width */
+  z-index: 1000;
+  position: fixed;         /* sticky top */
+  top: 0;
+  left: 0;
+}
+
+/* Remove any nested .nav { .nav {...} } blocks! */
+
+/* Navbar brand */
+.nav .brand {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+/* Navbar links */
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Navbar toggle button for mobile */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
 /* ===== RESPONSIVE NAVBAR ===== */
 @media (max-width: 992px) {
+  .nav-toggle {
+    display: block;
+  }
+
   .nav-list {
     display: none;
     flex-direction: column;
@@ -1048,11 +1101,7 @@ textarea:focus {
     width: 200px;
     padding: 20px;
     border-radius: 0 0 10px 10px;
-  }
-
-  .nav-toggle {
-    display: block;
-    cursor: pointer;
+    z-index: 1001;
   }
 
   .nav-list.show {
@@ -1060,51 +1109,8 @@ textarea:focus {
   }
 }
 
-/* ===== RESPONSIVE GRID FOR PROJECTS ===== */
-@media (max-width: 992px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  .lead {
-    font-size: 0.95rem;
-  }
-
-  .contact-form {
-    width: 100%;
-    gap: 10px;
-  }
-}
-
-/* ===== RESPONSIVE FOOTER ===== */
-@media (max-width: 992px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .footer-links-contact {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* ===== MODAL ADJUSTMENTS ===== */
-@media (max-width: 576px) {
-  .modal-content {
-    width: 90%;
-    padding: 15px;
-  }
+/* ===== BODY PADDING to avoid overlap ===== */
+body {
+  padding-top: 80px;   /* same as navbar height */
+  overflow-y: scroll;  /* always show vertical scrollbar */
 }
