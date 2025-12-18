@@ -723,6 +723,7 @@ a {
   width: 220px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
+  list-style: none;
 }
 .timeline-item:hover {
   transform: translateY(-4px);
