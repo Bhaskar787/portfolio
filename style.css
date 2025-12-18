@@ -374,6 +374,10 @@ body {
   background: rgba(255, 255, 255, 0.03);
   padding: 16px;
   border-radius: 10px;
+  
+}
+.service-card li{
+  margin-left: 25px
 }
 
 /* about */
@@ -638,7 +642,7 @@ a {
 /* ===== Projects Grid ===== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* FIXED 3 columns */
   gap: 18px;
   margin-top: 16px;
 }
@@ -1029,6 +1033,7 @@ textarea:focus {
 @media (max-width: 520px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    
   }
   .timeline {
     flex-direction: column;
@@ -1114,3 +1119,7 @@ body {
   padding-top: 80px;   /* same as navbar height */
   overflow-y: scroll;  /* always show vertical scrollbar */
 }
+
+
+
+
